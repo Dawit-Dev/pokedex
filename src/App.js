@@ -5,11 +5,17 @@ import CaughtPokemon from "./Component/CaughtPokemon";
 import "./App.css";
 
 function App() {
+  const appName = "Dawit's Pokedex";
+  const date = new Date().toLocaleDateString();
+  const abilities = ["Anticipation", "Adaptabiltily", "Run Away"];
+
+
+
   return (
     <div className="App">
-      <Logo />
-      <BestPokemon />
-      <CaughtPokemon />
+      <Logo appName={appName} />
+      <BestPokemon abilities={abilities} />
+      <CaughtPokemon date={date} />
     </div>
   );
 }

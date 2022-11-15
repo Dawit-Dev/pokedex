@@ -1,6 +1,5 @@
 import React from "react";
-
-const Title = (props) => <h1>{props.appName}</h1>;
+import Title from "./Title";
 
 const Avatar = () => {
   return (
@@ -11,8 +10,7 @@ const Avatar = () => {
   );
 };
 
-const Logo = () => {
-  const appName = "Dawit's Pokedex";
+const Logo = ({ appName }) => {
   return (
     <div>
       <header>
