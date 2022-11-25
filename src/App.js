@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./Component/Logo";
 import BestPokemon from "./Component/BestPokemon";
 import CaughtPokemon from "./Component/CaughtPokemon";
+import PokemonMovesSelector from "./Component/PokemonMovesSelector";
 import "./App.css";
 
 function App() {
@@ -9,13 +10,16 @@ function App() {
   const date = new Date().toLocaleDateString();
   const abilities = ["Anticipation", "Adaptabiltily", "Run Away"];
 
-
+   const logWhenClicked = () => {
+     console.log("Log button was clicked!");
+   };
 
   return (
     <div className="App">
-      <Logo appName={appName} />
+      <Logo appName={appName} handleClick={logWhenClicked} />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
+      <PokemonMovesSelector />
     </div>
   );
 }

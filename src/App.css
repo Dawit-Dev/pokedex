@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.pokemon-data {
+  display: block;
+  /* justify-content: space-around; */
+  background-color: rgb(238, 234, 234);
+  width: 20%;
+margin: 0 auto;
+}
