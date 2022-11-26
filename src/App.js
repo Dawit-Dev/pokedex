@@ -3,6 +3,7 @@ import Logo from "./Component/Logo";
 import BestPokemon from "./Component/BestPokemon";
 import CaughtPokemon from "./Component/CaughtPokemon";
 import PokemonMovesSelector from "./Component/PokemonMovesSelector";
+import PokemonCity from "./Component/PokemonCity";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
       <PokemonMovesSelector />
+      <PokemonCity />
     </div>
   );
 }

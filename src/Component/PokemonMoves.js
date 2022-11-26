@@ -18,11 +18,11 @@ function PokemonMoves(props) {
         {pokemonData ? (
           <div>
             <p>{pokemonData.name}'s moves:</p>
-            <ul>
+            <p>
               {pokemonData.moves.map((move, index) => {
-                return <li key={index}>{move.move.name}</li>;
+                return <span key={index}>{move.move.name}</span>;
               })}
-            </ul>
+            </p>
           </div>
         ) : (
           "null"
