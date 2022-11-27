@@ -41,6 +41,16 @@
   /* justify-content: space-around; */
   background-color: rgb(238, 234, 234);
   width: 60%;
-margin: 0 auto;
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button{
+  padding: 10px 20px;
+  box-shadow: rgba(242, 238, 238, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+}
+input {
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: 250px;
 }
